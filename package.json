@@ -1,7 +1,8 @@
 {
-  "name": "codesplitting-example2",
+  "name": "code-splitting-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://glennreyes.github.io/code-splitting-example"
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
