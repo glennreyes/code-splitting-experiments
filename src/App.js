@@ -7,10 +7,11 @@ class App extends Component {
     AsyncComponent: () => <span>Nothing loaded</span>,
   }
 
-  onMouseOver = () => {
-    import('./AsyncComponent')
-      .then(module => module.default)
-      .then(AsyncComponent => this.setState({ AsyncComponent }));
+  onMouseOver = async () => {
+    const module =  await import('./AsyncComponent');
+    const AsyncComponent = module.default;
+
+    this.setState({ AsyncComponent });
   }
 
   render() {
