@@ -2,20 +2,26 @@ import React, { Component } from 'react';
 
 class App extends Component {
   state = {
-    AsyncComponent: () => <div>Nothing loaded</div>,
+    components: [],
   };
 
   async componentDidMount() {
-    const module = await import('./AsyncComponent');
-    const AsyncComponent = module.default;
+    const components = await Promise.all([
+      import('./Home').then(m => m.default),
+      import('./Profile').then(m => m.default),
+    ]);
 
-    this.setState({ AsyncComponent });
+    this.setState({ components });
   }
 
   render() {
-    const { AsyncComponent } = this.state;
-
-    return <AsyncComponent />;
+    return (
+      <div>
+        {this.state.components.map((AsyncComponent, index) => (
+          <AsyncComponent key={index} />
+        ))}
+      </div>
+    );
   }
 }
 
