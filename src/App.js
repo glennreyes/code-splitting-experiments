@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   onMouseOver = async () => {
-    const module = await import(/* webpackChunkName: "profile" */ './AsyncComponent');
+    const module = await import(/* webpackChunkName: "async" */ './AsyncComponent');
     const AsyncComponent = module.default;
 
     this.setState({ AsyncComponent });
