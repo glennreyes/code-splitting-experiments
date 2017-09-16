@@ -5,9 +5,12 @@
   "homepage": "https://glennreyes.github.io/code-splitting-example",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-loadable": "^4.0.5",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
+    "prettier": "^1.7.0",
     "react-scripts": "^1.0.12"
   },
   "scripts": {

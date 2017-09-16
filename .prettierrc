@@ -1,0 +1,3 @@
+"*.{css,graphql,js,json}":
+  - prettier --write
+  - git add
