@@ -1,0 +1,2 @@
+webpackJsonp([2],{241:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a=t(5),c=t.n(a),s=function(){return c.a.createElement("div",{className:"Async"},"I'm async!")};n.default=s}});
+//# sourceMappingURL=async.31d6df4d.chunk.js.map
