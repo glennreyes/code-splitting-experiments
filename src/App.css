@@ -51,25 +51,3 @@ body {
   margin: 1rem;
   text-decoration: none;
 }
-
-.Content {
-  color: white;
-  flex: 1;
-  font-size: 2rem;
-}
-
-.Home {
-  background: cornflowerblue;
-}
-
-.Profile {
-  background: hotpink;
-}
-
-.Text {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  margin: 0;
-}

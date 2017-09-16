@@ -10,6 +10,7 @@
     "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "prettier": "^1.7.0",
     "react-scripts": "^1.0.12"
   },

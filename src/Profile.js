@@ -1,4 +1,5 @@
 import React from 'react';
+import './Profile.css';
 
 export default () => (
   <div className="Content Profile">
