@@ -45,7 +45,6 @@ class App extends Component {
               </Link>
             </nav>
           </div>
-          <AsyncComponent />
           <Switch>
             <Route
               exact
@@ -64,6 +63,9 @@ class App extends Component {
               })}
             />
           </Switch>
+          <footer>
+            <AsyncComponent />
+          </footer>
         </div>
       </Router>
     );
