@@ -25,7 +25,13 @@ class App extends Component {
     const { AsyncComponent } = this.state;
 
     return (
-      <Router>
+      <Router
+        basename={
+          process.env.NODE_ENV === 'production'
+            ? '/code-splitting-example'
+            : '/'
+        }
+      >
         <div className="App">
           <div className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
